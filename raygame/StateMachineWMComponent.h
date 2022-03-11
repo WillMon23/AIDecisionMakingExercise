@@ -4,7 +4,10 @@ class StateMachineWMComponent :
     public Component
 {
 public:
+
     void start() override;
-    void update(float deltatime);
+    void update(float deltatime) override;
+
+
 };
 

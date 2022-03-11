@@ -167,8 +167,10 @@
     <ClCompile Include="ScoreBoard.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SpriteComponent.cpp" />
+    <ClCompile Include="StateMachineWMComponent.cpp" />
     <ClCompile Include="Transform2D.cpp" />
     <ClCompile Include="UITextComponent.cpp" />
+    <ClCompile Include="WonderComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AABBCollider.h" />
@@ -191,9 +193,11 @@
     <ClInclude Include="ScoreBoard.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SpriteComponent.h" />
+    <ClInclude Include="StateMachineWMComponent.h" />
     <ClInclude Include="SteeringComponent.h" />
     <ClInclude Include="Transform2D.h" />
     <ClInclude Include="UITextComponent.h" />
+    <ClInclude Include="WonderComponent.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
