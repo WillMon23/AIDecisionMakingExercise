@@ -168,11 +168,14 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="ScoreBoard.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Seek_PLS_Component.cpp" />
     <ClCompile Include="SpriteComponent.cpp" />
     <ClCompile Include="StateMachineWMComponent.cpp" />
+    <ClCompile Include="StateMachine_PLS_Component.cpp" />
     <ClCompile Include="Transform2D.cpp" />
     <ClCompile Include="UITextComponent.cpp" />
     <ClCompile Include="WanderWMComponent.cpp" />
+    <ClCompile Include="Wander_PLS_Component.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AABBCollider.h" />
@@ -195,13 +198,16 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="ScoreBoard.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Seek_PLS_Component.h" />
     <ClInclude Include="FleeWMComponent.h" />
     <ClInclude Include="SpriteComponent.h" />
     <ClInclude Include="StateMachineWMComponent.h" />
+    <ClInclude Include="StateMachine_PLS_Component.h" />
     <ClInclude Include="SteeringComponent.h" />
     <ClInclude Include="Transform2D.h" />
     <ClInclude Include="UITextComponent.h" />
     <ClInclude Include="WanderWMComponent.h" />
+    <ClInclude Include="Wander_PLS_Component.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
