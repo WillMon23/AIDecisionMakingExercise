@@ -93,7 +93,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FleeWMComponent.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Components</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -173,9 +173,6 @@
       <Filter>Components</Filter>
     </ClInclude>
     <ClInclude Include="Bullet.h">
-      <Filter>Components</Filter>
-    </ClInclude>
-    <ClInclude Include="FallowBall.h">
       <Filter>Components</Filter>
     </ClInclude>
     <ClInclude Include="FleeWMComponent.h">

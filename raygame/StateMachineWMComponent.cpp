@@ -11,6 +11,7 @@
 void StateMachineWMComponent::start()
 {
 	setPhase(PHASEONE);
+	getOwner()->getComponent<FleeComponent>()->setTarget((Actor*)GameManager::getInstance()->getAgent2());
 }
 
 void StateMachineWMComponent::update(float deltatime)

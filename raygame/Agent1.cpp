@@ -27,7 +27,6 @@ void Agent1::start()
 	addComponent<MoveComponent>();
 	addComponent(new WanderComponent(10.0f, 20.0f, 30.0f));
 	addComponent<FleeComponent>();
-	getComponent<FleeComponent>()->setTarget(GameManager::getInstance()->getAgent2());
 
 }
 
