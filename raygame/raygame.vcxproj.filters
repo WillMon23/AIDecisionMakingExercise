@@ -83,6 +83,12 @@
     <ClCompile Include="ScoreBoard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StateMachineWMComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="WanderWMComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -153,6 +159,12 @@
     </ClInclude>
     <ClInclude Include="ScoreBoard.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WanderWMComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachineWMComponent.h">
+      <Filter>Components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
