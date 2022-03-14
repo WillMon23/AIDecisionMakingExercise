@@ -10,7 +10,7 @@
 
 void StateMachineWMComponent::start()
 {
-	setPhase(PHASETWO);
+	setPhase(PHASEONE);
 	getOwner()->getComponent<FleeComponent>()->setTarget((Actor*)GameManager::getInstance()->getAgent2());
 }
 
