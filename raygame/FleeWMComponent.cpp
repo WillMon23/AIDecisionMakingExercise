@@ -8,7 +8,7 @@ void FleeComponent::update(float deltaTime) {
 		//Sets the owener position to this veriable
 		MathLibrary::Vector2 position = getOwner()->getTransform()->getWorldPosition();
 		//Sets max speed for easy access 
-		setForce(300.0f);
+		setForce(20.0f);
 
 		m_velocity = getOwner()->getComponent<MoveComponent>()->getVelocity().getNormalized();
 
