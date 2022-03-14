@@ -1,9 +1,10 @@
 #include "StateMachine_PLS_Component.h"
 #include "Actor.h"
 #include "Seek_PLS_Component.h"
-//#include "WanderComponent.h"
+#include "Wander_PLS_Component.h"
 #include "MoveComponent.h"
 #include "Transform2D.h"
+#include "GameManager.h"
 
 void StateMachine_PLS_Component::start()
 {
@@ -12,10 +13,10 @@ void StateMachine_PLS_Component::start()
 	m_seekComponent = getOwner()->getComponent<Seek_PLS_Component>();
 	m_seekForce = m_seekComponent->getSteeringForce();
 
-	//m_wanderComponent = getOwner()->getComponent<WanderComponent>();
-	//m_wanderForce = m_wanderComponent->getSteeringForce();
+	m_wanderComponent = getOwner()->getComponent<Wander_PLS_Component>();
+	m_wanderForce = 50;
 
-	m_currentState = SEEK;
+	m_currentState = WANDER;
 }
 
 void StateMachine_PLS_Component::update(float deltaTime)
@@ -30,21 +31,21 @@ void StateMachine_PLS_Component::update(float deltaTime)
 	{
 	case IDLE:
 		m_seekComponent->setSteeringForce(0);
-		//m_wanderComponent->setSteeringForce(0);
+		m_wanderComponent->setSteeringForce(0);
 
 		if (targetInRange)
 			setCurrentState(SEEK);
 		break;
 	case WANDER:
 		m_seekComponent->setSteeringForce(0);
-		//m_wanderComponent->setSteeringForce(m_wanderForce);
+		m_wanderComponent->setSteeringForce(m_wanderForce);
 
 		if (targetInRange)
 			setCurrentState(SEEK);
 		break;
 	case SEEK:
 		m_seekComponent->setSteeringForce(m_seekForce);
-		//m_wanderComponent->setSteeringForce(0);
+		m_wanderComponent->setSteeringForce(0);
 
 		if (!targetInRange)
 			setCurrentState(WANDER);

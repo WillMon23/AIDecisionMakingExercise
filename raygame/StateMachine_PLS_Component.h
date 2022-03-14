@@ -24,9 +24,9 @@ public:
 private:
 	State m_currentState;
 	Seek_PLS_Component* m_seekComponent;
-	//Wander_PLS_Component* m_wanderComponent;
+	Wander_PLS_Component* m_wanderComponent;
 	float m_seekForce;
 	float m_wanderForce;
-	float m_seekRange = 800;
+	float m_seekRange = 450;
 };
 

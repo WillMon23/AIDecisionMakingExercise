@@ -95,6 +95,9 @@
     <ClCompile Include="StateMachine_PLS_Component.cpp">
       <Filter>Components</Filter>
     </ClCompile>
+    <ClCompile Include="Wander_PLS_Component.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -177,6 +180,9 @@
     </ClInclude>
     <ClInclude Include="StateMachine_PLS_Component.h">
       <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Wander_PLS_Component.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

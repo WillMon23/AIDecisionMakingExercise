@@ -1,6 +1,7 @@
 #pragma once
 #include "Character.h"
 class Seek_PLS_Component;
+class Wander_PLS_Component;
 
 class Agent2 :
     public Character
@@ -22,6 +23,7 @@ public:
     virtual void onDamageRecieved() {};
 private:
     Seek_PLS_Component* m_seekComponent;
+    Wander_PLS_Component* m_wanderComponent;
 };
 
 

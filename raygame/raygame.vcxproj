@@ -173,6 +173,7 @@
     <ClCompile Include="Transform2D.cpp" />
     <ClCompile Include="UITextComponent.cpp" />
     <ClCompile Include="WanderWMComponent.cpp" />
+    <ClCompile Include="Wander_PLS_Component.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AABBCollider.h" />
@@ -202,6 +203,7 @@
     <ClInclude Include="Transform2D.h" />
     <ClInclude Include="UITextComponent.h" />
     <ClInclude Include="WanderWMComponent.h" />
+    <ClInclude Include="Wander_PLS_Component.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
