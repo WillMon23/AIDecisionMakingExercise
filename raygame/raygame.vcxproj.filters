@@ -84,10 +84,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StateMachineWMComponent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="WonderComponent.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Components</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -160,11 +157,11 @@
     <ClInclude Include="ScoreBoard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="StateMachineWMComponent.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="WanderWMComponent.h">
+      <Filter>Components</Filter>
     </ClInclude>
-    <ClInclude Include="WonderComponent.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="StateMachineWMComponent.h">
+      <Filter>Components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
