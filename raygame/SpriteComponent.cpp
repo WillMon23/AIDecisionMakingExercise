@@ -55,3 +55,8 @@ void SpriteComponent::draw()
 	//Draw the sprite
 	RAYLIB_H::DrawTextureEx(*m_texture, rayPos, (float)(rotation * 180.0f / PI), 1, *m_color);
 }
+
+void SpriteComponent::setPath(const char* path)
+{
+	m_texture = new Texture2D(RAYLIB_H::LoadTexture(path));
+}

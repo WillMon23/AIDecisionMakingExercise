@@ -89,6 +89,12 @@
     <ClCompile Include="WanderWMComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FallowBall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FleeWMComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -164,6 +170,15 @@
       <Filter>Components</Filter>
     </ClInclude>
     <ClInclude Include="StateMachineWMComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="FallowBall.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="FleeWMComponent.h">
       <Filter>Components</Filter>
     </ClInclude>
   </ItemGroup>

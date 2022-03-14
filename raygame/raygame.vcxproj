@@ -157,6 +157,8 @@
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="FallowBall.cpp" />
+    <ClCompile Include="FleeWMComponent.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Goal.cpp" />
     <ClCompile Include="InputComponent.cpp" />
@@ -179,11 +181,13 @@
     <ClInclude Include="Agent.h" />
     <ClInclude Include="Agent1.h" />
     <ClInclude Include="Agent2.h" />
+    <ClInclude Include="Bullet.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="CircleCollider.h" />
     <ClInclude Include="Collider.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="Engine.h" />
+    <ClInclude Include="FallowBall.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="Goal.h" />
     <ClInclude Include="InputComponent.h" />
@@ -192,6 +196,7 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="ScoreBoard.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="FleeWMComponent.h" />
     <ClInclude Include="SpriteComponent.h" />
     <ClInclude Include="StateMachineWMComponent.h" />
     <ClInclude Include="SteeringComponent.h" />
