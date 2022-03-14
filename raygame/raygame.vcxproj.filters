@@ -86,6 +86,9 @@
     <ClCompile Include="StateMachineWMComponent.cpp">
       <Filter>Components</Filter>
     </ClCompile>
+    <ClCompile Include="WanderWMComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">

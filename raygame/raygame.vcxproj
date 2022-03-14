@@ -170,6 +170,7 @@
     <ClCompile Include="StateMachineWMComponent.cpp" />
     <ClCompile Include="Transform2D.cpp" />
     <ClCompile Include="UITextComponent.cpp" />
+    <ClCompile Include="WanderWMComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AABBCollider.h" />
