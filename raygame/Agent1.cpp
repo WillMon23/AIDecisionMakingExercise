@@ -25,7 +25,7 @@ void Agent1::start()
 	//add steering behaviours here
 
 	addComponent<MoveComponent>();
-	addComponent(new WanderComponent(10.0f, 20.0f, 30.0f));
+	addComponent(new WanderComponent(3.0f, 40.0f, 100.0f));
 	addComponent<FleeComponent>();
 
 }

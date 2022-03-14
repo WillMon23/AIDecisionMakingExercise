@@ -27,6 +27,6 @@ private:
 	Wander_PLS_Component* m_wanderComponent;
 	float m_seekForce;
 	float m_wanderForce;
-	float m_seekRange = 300;
+	float m_seekRange = 450;
 };
 
