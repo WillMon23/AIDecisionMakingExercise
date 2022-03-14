@@ -23,6 +23,9 @@ void MoveComponent::update(float deltaTime)
 	else if (newPosition.y < 0)
 		newPosition.y = Engine::getScreenHeight();
 
+	if (getVelocity().getMagnitude() > getMaxSpeed())
+		setVelocity(getVelocity().getNormalized() * getMaxSpeed());
+
 	//Set the actors position to be the new position found
 	getOwner()->getTransform()->setLocalPosition(newPosition);
 }
