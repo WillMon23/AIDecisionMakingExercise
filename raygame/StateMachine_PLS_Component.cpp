@@ -14,23 +14,24 @@ void StateMachine_PLS_Component::start()
 	m_seekForce = m_seekComponent->getSteeringForce();
 
 	m_wanderComponent = getOwner()->getComponent<Wander_PLS_Component>();
-	m_wanderForce = 50;
+	m_wanderForce = 30;
 
 	m_currentState = WANDER;
 }
 
 void StateMachine_PLS_Component::update(float deltaTime)
 {
-	Actor* test = m_seekComponent->getTarget();
 	MathLibrary::Vector2 targetPos = m_seekComponent->getTarget()->getTransform()->getWorldPosition();
 	MathLibrary::Vector2 ownerPos = getOwner()->getTransform()->getWorldPosition();
 	float distanceFromTarget = (targetPos - ownerPos).getMagnitude();
+	float distanceFromBall = (ownerPos - GameManager::getInstance()->getBall()->getTransform()->getWorldPosition()).getMagnitude();
 
 	bool targetInRange = distanceFromTarget <= m_seekRange;
 	switch (m_currentState)
 	{
-	case IDLE:
-		m_seekComponent->setSteeringForce(0);
+	case SEEK_BALL:
+		m_seekComponent->setSteeringForce(m_seekForce);
+		m_seekComponent->setTarget(GameManager::getInstance()->getBall());
 		m_wanderComponent->setSteeringForce(0);
 
 		if (targetInRange)

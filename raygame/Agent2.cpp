@@ -12,9 +12,9 @@ Agent2::Agent2(float x, float y, const char* name, float maxForce, float maxSpee
 	addComponent(new SpriteComponent("Images/enemy.png"));
 	m_seekComponent = new Seek_PLS_Component();
 	m_seekComponent->setSteeringForce(50);
-	getComponent<MoveComponent>()->setMaxSpeed(10);
+	getComponent<MoveComponent>()->setMaxSpeed(20);
 	addComponent(m_seekComponent);
-	m_wanderComponent = new Wander_PLS_Component(1000, 200, 100);
+	m_wanderComponent = new Wander_PLS_Component(500, 200, 100);
 	addComponent(m_wanderComponent);
 	addComponent<StateMachine_PLS_Component>();
 
