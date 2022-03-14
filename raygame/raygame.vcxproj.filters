@@ -89,6 +89,12 @@
     <ClCompile Include="WanderWMComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Seek_PLS_Component.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine_PLS_Component.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -164,6 +170,12 @@
       <Filter>Components</Filter>
     </ClInclude>
     <ClInclude Include="StateMachineWMComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Seek_PLS_Component.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine_PLS_Component.h">
       <Filter>Components</Filter>
     </ClInclude>
   </ItemGroup>
