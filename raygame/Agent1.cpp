@@ -1,6 +1,9 @@
 #include "Agent1.h"
 #include "Agent.h"
+#include "MoveComponent.h"
 #include "SpriteComponent.h"
+#include "WanderWMComponent.h"
+#include "FleeWMComponent.h"
 #include "Goal.h"
 #include "GameManager.h"
 #include "StateMachineWMComponent.h"
@@ -20,6 +23,11 @@ void Agent1::start()
 {
 	Character::start();
 	//add steering behaviours here
+
+	addComponent<MoveComponent>();
+	addComponent(new WanderComponent(10.0f, 20.0f, 30.0f));
+	addComponent<FleeComponent>();
+
 }
 
 void Agent1::update(float deltaTime)

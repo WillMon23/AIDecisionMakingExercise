@@ -13,6 +13,12 @@ WanderComponent::WanderComponent(float circleDistance, float circleRadius, float
 	srand(time(0));
 }
 
+WanderComponent::WanderComponent() : SteeringComponent::SteeringComponent(nullptr, 200.0f)
+{
+	m_circleDistance = 5.0f;
+	m_circleRadius = 20.0f;
+}
+
 MathLibrary::Vector2 WanderComponent::calculateForce()
 {
 	if (getSteeringForce() == 0)

@@ -22,6 +22,8 @@ public:
 	void setColor(Color color);
 	void draw() override;
 
+	void setPath(const char* path);
+
 private:
 	Texture2D* m_texture;
 	Color* m_color;
